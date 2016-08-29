@@ -1,0 +1,42 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title
+    link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css", rel="stylesheet", integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1", crossorigin="anonymous")
+    link(href='https://fonts.googleapis.com/css?family=Alfa+Slab+One', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=Oswald', rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css?family=VT323', rel='stylesheet')
+  body
+    .wrapper
+      .container
+        .game
+          .header
+            .green-part
+            .red-part
+          .footer
+            .yellow-part
+            .blue-part
+          .settings
+            h1.name Simon
+            .settings__content
+              .count 
+                .count__content
+                  | -1
+                span.label count
+              .start
+                .start-button
+                span.label  start
+              .strict
+                .strict-button
+                span.label strict
+            .settings__content
+              p.label-on on
+              //- .switch
+              //-   .switch-button
+              .tg-list-item
+                input#cb4.tgl.tgl-flat(type = "checkbox")
+                label.tgl-btn(for = "cb4")
+
+              p.label-off off
+
